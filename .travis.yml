@@ -5,3 +5,11 @@ sudo: false
 rvm:
   - '1.9.3'
   - '2.1'
+
+script:
+  - rake $RAKE_TASK
+
+env:
+  matrix:
+  	- RAKE_TASK=foo
+  	- RAKE_TASK=silent
