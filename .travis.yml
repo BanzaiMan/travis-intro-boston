@@ -11,5 +11,5 @@ script:
 
 env:
   matrix:
-  	- RAKE_TASK=foo
-  	- RAKE_TASK=silent
+    - RAKE_TASK=foo
+    - RAKE_TASK=silent
