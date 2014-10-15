@@ -13,3 +13,7 @@ env:
   matrix:
     - RAKE_TASK=foo
     - RAKE_TASK=silent
+
+services:
+  - redis
+  - elasticsearch
