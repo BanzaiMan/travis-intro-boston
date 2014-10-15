@@ -5,6 +5,7 @@ sudo: false
 rvm:
   - '1.9.3'
   - '2.1'
+  - '2.2'
 
 script:
   - rake $RAKE_TASK
@@ -13,6 +14,10 @@ env:
   matrix:
     - RAKE_TASK=foo
     - RAKE_TASK=silent
+
+matrix:
+  allow_failures:
+    - rvm: '2.2'
 
 services:
   - redis
