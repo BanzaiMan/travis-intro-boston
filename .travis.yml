@@ -17,3 +17,6 @@ env:
 services:
   - redis
   - elasticsearch
+
+addons:
+  postgresql: "9.3"
